@@ -1,15 +1,13 @@
-body 
-{
+body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #eee7e1;
-    color:#6e171a;
+    color: #6e171a;
     margin-left: 10vw;
     margin-right: 10vw;
 }
 
 /* Navigational elements */
-.navbar 
-{
+.navbar {
     border-bottom: 1px solid #6e171a;
     display: flex;
     justify-content: center;
@@ -17,27 +15,23 @@ body
     margin-bottom: 1cm;
 }
 
-.categories
-{
+.categories {
     text-align: center;
     justify-self: center;
     margin: auto;
     /* width: 700px; */
 }
 
-.title
-{
+.title {
     margin: auto;
 }
 
-.searchbar
-{
+.searchbar {
     margin: auto;
 }
 
-.topmenu
-{
-    color:#6e171a;
+.topmenu {
+    color: #6e171a;
     text-decoration: none;
     outline: none;
     text-align: center;
@@ -49,20 +43,20 @@ body
 .topmenu:link,
 .topmenu:visited,
 .topmenu:focus {
-  background: darkred;
-  color: white;
+    background: darkred;
+    color: white;
 }
 
 .topmenu:hover {
-  background: red;
+    background: red;
 }
 
 .topmenu:active {
-  background: white;
-  color: #6e171a;
+    background: white;
+    color: #6e171a;
 }
 
-.homebutton{
+.homebutton {
     text-decoration: none;
     outline: none;
     color: #6e171a;
@@ -77,27 +71,25 @@ article {
     border-radius: 5px;
 }
 
-.index
-{
+.index {
     display: grid;
-    grid-template-columns: minmax(200px,1fr) minmax(200px,1fr) minmax(200px,1fr);
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
     margin-left: 15vw;
     margin-right: 15vw;
 }
 
-.search_input
-{
+.search_input {
     line-height: 1.25rem;
     padding: .5rem;
     border-radius: 5px;
-    color:#6e171a;
+    color: #6e171a;
 }
 
 /* Content pages */
 
-.content{
+.content {
     display: grid;
-    grid-template-columns: minmax(100px,1fr);
+    grid-template-columns: minmax(100px, 1fr);
     margin-left: 15vw;
     margin-right: 15vw;
 }
@@ -111,22 +103,36 @@ article {
 .sub_header {
     margin-top: 3rem;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
     border-bottom: 1px solid #6e171a;
+    margin-bottom: -.5rem;
 }
 
 .sub_sub_header {
     margin-top: 1rem;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
     margin-bottom: -.5rem;
-    color:#6e171a;
+    color: #6e171a;
+    font-weight: bolder;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.h4 {
+    font-weight: 300;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .race_traits {
     line-height: 1.3;
 }
 
+footer {
+    text-align: center;
+    font-weight: lighter;
+    border-top: 1px solid #6e171a;
+    margin-top: 5rem;
+}
 
 /* General text mark-up */
 .center {
@@ -139,4 +145,32 @@ article {
 
 .italic {
     font-style: italic;
+}
+
+/* Tables */
+
+table {
+    table-layout: fixed;
+    width: 60%;
+    text-align: left;
+    border-collapse:collapse;
+    margin-top: 1rem;
+}
+
+thead th:nth-child(1) {
+    width: 30%;
+    text-align: center;
+}
+
+thead th:nth-child(2) {
+    width: 100%;
+
+}
+
+td:nth-child(1){
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #d5bfa3;
 }
