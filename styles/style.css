@@ -2,6 +2,24 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #eee7e1;
     color: #6e171a;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #eee7e1;
+        color: #6e171a;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #eee7e1;
+    color: #6e171a;
     margin-left: 10vw;
     margin-right: 10vw;
 }
@@ -73,9 +91,18 @@ article {
 
 .index {
     display: grid;
-    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
-    margin-left: 15vw;
-    margin-right: 15vw;
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+@media (min-width: 800px) {
+    .index {
+        display: grid;
+        grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
 }
 
 .search_input {
@@ -90,8 +117,17 @@ article {
 .content {
     display: grid;
     grid-template-columns: minmax(100px, 1fr);
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+@media (min-width: 800px) {
+    .content {
+        display: grid;
+        grid-template-columns: minmax(100px, 1fr);
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
 }
 
 .main_header {
@@ -153,7 +189,7 @@ table {
     table-layout: fixed;
     width: 60%;
     text-align: left;
-    border-collapse:collapse;
+    border-collapse: collapse;
     margin-top: 1rem;
 }
 
@@ -167,7 +203,7 @@ thead th:nth-child(2) {
 
 }
 
-td:nth-child(1){
+td:nth-child(1) {
     text-align: center;
 }
 
