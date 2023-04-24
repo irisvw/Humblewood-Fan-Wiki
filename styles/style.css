@@ -211,10 +211,28 @@ footer {
 
 /* Tables */
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     table {
         table-layout: fixed;
+        width: 200%;
+        text-align: left;
+        border-collapse: collapse;
+        margin-top: 1rem;
+    }
+    
+    thead th:nth-child(1) {
+        width: 60%;
+        text-align: center;
+    }
+
+    thead th:nth-child(2) {
         width: 100%;
+    
+    }
+
+    .bigtable {
+        table-layout: fixed;
+        width: 200%;
         text-align: left;
         border-collapse: collapse;
         margin-top: 1rem;
