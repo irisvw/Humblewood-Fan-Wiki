@@ -32,6 +32,11 @@ body {
     grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
 }
 
+.categories {
+    text-align: center;
+}
+
+
 @media (min-width: 800px) {
     .navbar {
         border-bottom: 1px solid #6e171a;
@@ -40,13 +45,13 @@ body {
         align-items: center;
         margin-bottom: 1cm;
     }
-}
 
-.categories {
-    text-align: center;
-    justify-self: center;
-    margin: auto;
-    /* width: 700px; */
+    .categories {
+        text-align: center;
+        justify-self: center;
+        margin: auto;
+        /* width: 700px; */
+    }
 }
 
 .title {
@@ -202,9 +207,19 @@ footer {
 .divider {
     border-top: 1px solid #6e171a;
     margin: 1rem;
-  }
+}
 
 /* Tables */
+
+@media (max-width: 800px) {
+    table {
+        table-layout: fixed;
+        width: 100%;
+        text-align: left;
+        border-collapse: collapse;
+        margin-top: 1rem;
+    }
+}
 
 table {
     table-layout: fixed;
