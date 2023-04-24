@@ -28,6 +28,8 @@ body {
 .navbar {
     border-bottom: 1px solid #6e171a;
     margin-bottom: 1cm;
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
 }
 
 @media (min-width: 800px) {
@@ -96,7 +98,7 @@ article {
     border-radius: 5px;
 }
 
-.index {
+.index3 {
     display: grid;
     grid-template-columns: minmax(200px, 1fr);
     margin-left: 5vw;
@@ -104,12 +106,19 @@ article {
 }
 
 @media (min-width: 800px) {
-    .index {
+    .index3 {
         display: grid;
         grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
         margin-left: 15vw;
         margin-right: 15vw;
     }
+}
+
+.index2 {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
+    margin-left: 8vw;
+    margin-right: 8vw;
 }
 
 .search_input {
@@ -190,6 +199,11 @@ footer {
     font-style: italic;
 }
 
+.divider {
+    border-top: 1px solid #6e171a;
+    margin: 1rem;
+  }
+
 /* Tables */
 
 table {
@@ -216,4 +230,24 @@ td:nth-child(1) {
 
 tbody tr:nth-child(even) {
     background-color: #d5bfa3;
+}
+
+.bigtable {
+    table-layout: fixed;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.thead-big th:nth-child(1) {
+    width: 30%;
+}
+
+.thead-big th:nth-child(2) {
+    width: 10%;
+}
+
+.thead-big th:nth-child(3) {
+    width: 20%;
 }
