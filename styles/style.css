@@ -271,6 +271,8 @@ tbody tr:nth-child(even) {
     text-align: left;
     border-collapse: collapse;
     margin-top: 1rem;
+    line-height: 1.5rem;
+    padding: .5rem;
 }
 
 .thead-big th:nth-child(1) {
