@@ -241,7 +241,7 @@ footer {
 
 table {
     table-layout: fixed;
-    width: 60%;
+    width: 100%;
     text-align: left;
     border-collapse: collapse;
     margin-top: 1rem;
